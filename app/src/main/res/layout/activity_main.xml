@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:layout_alignTop="@id/startButton"
+        android:layout_toEndOf="@id/startButton"
+        android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:id="@+id/accsense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accelerometer: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/startButton"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/gyrosense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gyroscope: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/accsense"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/proximitySense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proximity: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/gyrosense"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/lightSense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/proximitySense"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/magneticFieldSense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Magnetic Field: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/lightSense"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/latitudeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/magneticFieldSense"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/longitudeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/latitudeTextView"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/exportButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Export to CSV"
+        android:onClick="onExportButtonClick"
+        android:layout_below="@id/longitudeTextView"
+        android:layout_marginTop="16dp"/>
+
+
+</RelativeLayout>

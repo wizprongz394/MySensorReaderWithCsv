@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="sensor_data_format">%s: %.2f</string>
+
+</resources>
